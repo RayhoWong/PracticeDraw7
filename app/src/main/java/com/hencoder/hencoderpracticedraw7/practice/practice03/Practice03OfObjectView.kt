@@ -22,11 +22,6 @@ class Practice03OfObjectView : View {
     constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) {}
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {}
 
-    fun getPosition(): PointF {
-        return mPosition
-    }
-
-
 
     public override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)

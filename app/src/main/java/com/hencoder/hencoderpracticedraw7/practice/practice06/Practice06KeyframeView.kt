@@ -11,7 +11,7 @@ import com.hencoder.hencoderpracticedraw7.Utils
 
 class Practice06KeyframeView : View {
     val radius = Utils.dpToPixel(80f)
-    var progress = 0
+    var progress = 0f
     set(value) {
         field = value
         invalidate()
@@ -35,7 +35,7 @@ class Practice06KeyframeView : View {
         canvas.drawArc(arcRectF, 135f, progress * 2.7f, false, paint)
         paint.color = Color.WHITE
         paint.style = Paint.Style.FILL
-        canvas.drawText("$progress%", centerX, centerY - (paint.ascent() + paint.descent()) / 2, paint)
+        canvas.drawText("${progress.toInt()}%", centerX, centerY - (paint.ascent() + paint.descent()) / 2, paint)
     }
 
     init {

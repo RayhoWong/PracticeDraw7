@@ -23,7 +23,7 @@ class Practice03OfObjectLayout : RelativeLayout {
         view = findViewById(R.id.objectAnimatorView) as Practice03OfObjectView
         animateBt = findViewById(R.id.animateBt) as Button
         animateBt!!.setOnClickListener {
-            val animator = ObjectAnimator.ofObject(view, "position",
+            val animator = ObjectAnimator.ofObject(view, "mPosition",
                     PointFEvaluator(), PointF(0f, 0f), PointF(1f, 1f))
             animator.interpolator = LinearInterpolator()
             animator.duration = 1000
